@@ -1,21 +1,20 @@
 import React from "react";
 import "./Table.scss";
+import numeral from 'numeral'
 
 const Table = ({ countries }) => {
   return (
     <div className="table">
-      <table>
-        <tbody>
+
           {countries.map(({ country, cases }) => (
             <tr key={country}>
               <td>{country}</td>
               <td>
-                <strong>{cases}</strong>
+                <strong>{numeral(cases).format("0,0")}</strong>
               </td>
             </tr>
           ))}
-        </tbody>
-      </table>
+
     </div>
   );
 };

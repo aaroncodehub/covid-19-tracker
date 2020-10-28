@@ -46,7 +46,7 @@ const options = {
   }
 };
 
-const LineGraph = ({casesType='cases'}) => {
+const LineGraph = ({casesType}) => {
   const [data, setData] = useState({});
   useEffect(() => {
     const fetchData = async () => {
