@@ -5,17 +5,17 @@
     background-color: white;
     color: #6a5d5d;
 
-    & tr:nth-of-type(odd){
+    &__tr:nth-of-type(odd){
         background-color: #f3f2f8;
     }
 
-    &  tr {
+    &__tr {
         display: flex;
         justify-content: space-between;
     }
 
 
-    & td {
+    &__td {
         padding: .5rem;
         border: none;
     }
